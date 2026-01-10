@@ -13,14 +13,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<section class="hero">
-				<h1>Mohammed Babelly</h1>
-				<p class="title">Software Engineer — Backend, Cloud, Automation & DevOps</p>
-				<p class="tagline">Building scalable systems at Codemagic • Python • GCP • Automation enthusiast</p>
+			<!-- Hero Section -->
+			<section class="hero stagger-children">
+				<h1 class="hero-title">Mohammed <span class="gradient-text">Babelly</span></h1>
+				<p class="hero-subtitle">Software Engineer — Backend, Cloud, Automation & DevOps</p>
+				<p class="hero-tagline">Building scalable systems at Codemagic • Python • GCP • Automation enthusiast</p>
 			</section>
 
-			<section class="about">
-				<h2>About Me</h2>
+			<!-- About Section -->
+			<section class="section about-section animate-fade-in-up">
+				<h2 class="section-title">About Me</h2>
 				<p>
 					I'm a Software Engineer currently working at <strong>Codemagic CI/CD</strong>, where I focus on backend development with Python, building and maintaining scalable infrastructure on Google Cloud Platform (GCP), and heavy automation to power fast, reliable mobile & web development workflows for thousands of developers.
 				</p>
@@ -32,70 +34,146 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				</p>
 			</section>
 
-			<section class="skills">
-				<h2>Skills</h2>
-				<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-					<li><strong>Backend & Automation:</strong> Python, Automation, CI/CD, DevOps</li>
-					<li><strong>Mobile:</strong> Flutter, Dart, Mobile Deployment & Code Push</li>
-					<li><strong>Cloud & Infra:</strong> Google Cloud Platform (GCP), AWS, Docker, Server Management</li>
-					<li><strong>Other:</strong> Homelabbing, n8n, iOS Shortcuts, Ansible, Git</li>
-					<li><strong>Community:</strong> Contributor to Litestar (Python web framework) & Ansible</li>
-				</ul>
-			</section>
-
-			<section class="talks">
-				<h2>Talks & Workshops</h2>
-				<p>I've enjoyed speaking at developer communities and events in Dubai, Abu Dhabi, Aleppo, and online:</p>
-				<ul class="list-disc pl-6 space-y-3 mt-4">
-					<li><strong>Over-the-Air Updates for Flutter</strong> — Using Shorebird + Codemagic for seamless code pushes</li>
-					<li><strong>White Labeling Flutter Apps with CI/CD</strong> — Streamlining multi-brand deployments</li>
-					<li><strong>Prompt Engineering for Generative AI</strong> — Delivered multiple times (AWS Community Dubai, Syrian Developers Gathering, Aleppo University)</li>
-					<li><strong>Git Best Practices</strong> — Effective version control for teams</li>
-					<li><strong>How to Contribute to Open-Source Projects</strong> — Practical guide to getting started</li>
-					<li><strong>Flutter & Modern Mobile Workflows</strong> — Deployment, automation, and best practices</li>
-				</ul>
-			</section>
-
-			<section class="content mt-10">
-				<h2>Online Content & Teaching</h2>
-				<p>
-					I create educational content to help developers level up, mostly in Arabic with some English:
-				</p>
-
-				<div class="mt-6">
-					<h3 class="text-xl font-semibold">YouTube Channel (@MohammedBabelly)</h3>
-					<p class="mt-2">
-						My channel features tutorials, deep dives, and discussions on Flutter, CI/CD, clean code, and more (2K+ subscribers).
-					</p>
-					<ul class="list-disc pl-6 mt-3 space-y-2">
-						<li><strong>Various Flutter Discussions Series</strong> — Collaborative talks covering Flutter topics, tools, and real-world usage: <a href="https://youtube.com/playlist?list=PLMylOrRilu7tWKrTHhda6pvb8jgh9BAV0" target="_blank" class="text-blue-600 hover:underline">Watch the playlist</a></li>
-						<li>Other popular series & videos: Flutter State Management (Provider), Google Maps in Flutter, Flutter Web in 2024, Codemagic CI/CD in 45 minutes, SOLID Principles, and more.</li>
-					</ul>
-					<p class="mt-4">
-						<a href="https://www.youtube.com/@MohammedBabelly" target="_blank" class="text-blue-600 hover:underline font-medium">Visit my YouTube channel →</a>
-					</p>
-				</div>
-
-				<div class="mt-8">
-					<h3 class="text-xl font-semibold">Almentor Course</h3>
-					<p class="mt-2">
-						<strong>Introduction to Cloud Computing</strong> — A beginner-friendly course (53 minutes, 11 lessons) covering cloud fundamentals, available on the Almentor platform with free lessons.
-					</p>
-					<p class="mt-3">
-						<a href="https://app.almentor.net/courses/Introduction-to-Cloud-Computing" target="_blank" class="text-blue-600 hover:underline font-medium">Enroll / View course →</a>
-					</p>
+			<!-- Skills Section -->
+			<section class="section-alt">
+				<div class="section-inner">
+					<h2 class="section-title">Skills</h2>
+					<div class="skills-grid stagger-children">
+						<div class="skill-card">
+							<h3 class="skill-card-title">Backend & Automation</h3>
+							<p class="skill-card-content">Python, Automation, CI/CD, DevOps</p>
+						</div>
+						<div class="skill-card">
+							<h3 class="skill-card-title">Mobile</h3>
+							<p class="skill-card-content">Flutter, Dart, Mobile Deployment & Code Push</p>
+						</div>
+						<div class="skill-card">
+							<h3 class="skill-card-title">Cloud & Infrastructure</h3>
+							<p class="skill-card-content">Google Cloud Platform (GCP), AWS, Docker, Server Management</p>
+						</div>
+						<div class="skill-card">
+							<h3 class="skill-card-title">Tools & Automation</h3>
+							<p class="skill-card-content">Homelabbing, n8n, iOS Shortcuts, Ansible, Git</p>
+						</div>
+						<div class="skill-card">
+							<h3 class="skill-card-title">Open Source</h3>
+							<p class="skill-card-content">Contributor to Litestar (Python web framework) & Ansible</p>
+						</div>
+						<div class="skill-card">
+							<h3 class="skill-card-title">Content & Teaching</h3>
+							<p class="skill-card-content">YouTube tutorials, Online courses, Tech talks & Workshops</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
-			<section class="connect mt-12 text-center">
-				<h2>Let's Connect</h2>
-				<p class="mt-4">
-					Working on backend, cloud, automation, Flutter, CI/CD, or just want to talk homelabbing? I'd love to hear from you!
-				</p>
-				<div class="flex flex-wrap justify-center gap-6 mt-6">
-					<a href="https://www.linkedin.com/in/mohammedbabelly" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
-					<a href="https://github.com/mohammedbabelly20" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
-					<a href="https://www.youtube.com/@MohammedBabelly" target="_blank" class="text-blue-600 hover:underline">YouTube</a>
+			<!-- Talks Section -->
+			<section class="section talks-section">
+				<h2 class="section-title">Talks & Workshops</h2>
+				<p class="section-intro">I've enjoyed speaking at developer communities and events in Dubai, Abu Dhabi, Aleppo, and online:</p>
+				<ul class="talks-list">
+					<li class="talk-item">
+						<h3 class="talk-title">Over-the-Air Updates for Flutter</h3>
+						<p class="talk-description">Using Shorebird + Codemagic for seamless code pushes</p>
+					</li>
+					<li class="talk-item">
+						<h3 class="talk-title">White Labeling Flutter Apps with CI/CD</h3>
+						<p class="talk-description">Streamlining multi-brand deployments</p>
+					</li>
+					<li class="talk-item">
+						<h3 class="talk-title">Prompt Engineering for Generative AI</h3>
+						<p class="talk-description">Delivered multiple times (AWS Community Dubai, Syrian Developers Gathering, Aleppo University)</p>
+					</li>
+					<li class="talk-item">
+						<h3 class="talk-title">Git Best Practices</h3>
+						<p class="talk-description">Effective version control for teams</p>
+					</li>
+					<li class="talk-item">
+						<h3 class="talk-title">How to Contribute to Open-Source Projects</h3>
+						<p class="talk-description">Practical guide to getting started</p>
+					</li>
+					<li class="talk-item">
+						<h3 class="talk-title">Flutter & Modern Mobile Workflows</h3>
+						<p class="talk-description">Deployment, automation, and best practices</p>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Content Section -->
+			<section class="section-alt">
+				<div class="section-inner">
+					<h2 class="section-title">Online Content & Teaching</h2>
+					<p class="section-intro">
+						I create educational content to help developers level up, mostly in Arabic with some English:
+					</p>
+
+					<div class="content-card">
+						<div class="content-card-header">
+							<div class="content-card-icon">
+								<svg viewBox="0 0 16 16" width="24" height="24">
+									<path fill="currentColor" d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 0 7.708 2zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+								</svg>
+							</div>
+							<h3 class="content-card-title">YouTube Channel</h3>
+						</div>
+						<p>
+							My channel features tutorials, deep dives, and discussions on Flutter, CI/CD, clean code, and more (2K+ subscribers).
+						</p>
+						<ul class="content-list">
+							<li><strong>Various Flutter Discussions Series</strong> — Collaborative talks covering Flutter topics, tools, and real-world usage: <a href="https://youtube.com/playlist?list=PLMylOrRilu7tWKrTHhda6pvb8jgh9BAV0" target="_blank" rel="noopener noreferrer" class="link-animated">Watch the playlist</a></li>
+							<li>Other popular series & videos: Flutter State Management (Provider), Google Maps in Flutter, Flutter Web in 2024, Codemagic CI/CD in 45 minutes, SOLID Principles, and more.</li>
+						</ul>
+						<p class="mt-4">
+							<a href="https://www.youtube.com/@MohammedBabelly" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit my YouTube channel →</a>
+						</p>
+					</div>
+
+					<div class="content-card">
+						<div class="content-card-header">
+							<div class="content-card-icon">
+								<svg viewBox="0 0 16 16" width="24" height="24">
+									<path fill="currentColor" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zm0 4v1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-7z"/>
+								</svg>
+							</div>
+							<h3 class="content-card-title">Almentor Course</h3>
+						</div>
+						<p>
+							<strong>Introduction to Cloud Computing</strong> — A beginner-friendly course (53 minutes, 11 lessons) covering cloud fundamentals, available on the Almentor platform with free lessons.
+						</p>
+						<p class="mt-4">
+							<a href="https://app.almentor.net/courses/Introduction-to-Cloud-Computing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Enroll / View course →</a>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Connect Section -->
+			<section class="connect-section">
+				<div class="section-inner">
+					<h2 class="section-title section-title-center">Let's Connect</h2>
+					<p class="connect-text">
+						Working on backend, cloud, automation, Flutter, CI/CD, or just want to talk homelabbing? I'd love to hear from you!
+					</p>
+					<div class="social-links">
+						<a href="https://www.linkedin.com/in/mohammedbabelly" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+							<svg viewBox="0 0 16 16" width="18" height="18">
+								<path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 12.248V6.169H2.542v6.079h2.401zm-1.2-6.879c.812 0 1.32-.533 1.32-1.2 0-.685-.508-1.199-1.32-1.199C2.927 3.97 2.42 4.503 2.42 5.169c0 .667.507 1.2 1.2 1.2zm4.497 6.879V9.359c0-.209.015-.698.271-.698.253 0 .318.334.318.673v3.318h2.399V9.34c0-2.285-1.22-3.348-2.84-3.348-1.325 0-1.92.734-2.25 1.24h.033V6.17H6.24c.03.877 0 6.078 0 6.078h2.4z"/>
+							</svg>
+							LinkedIn
+						</a>
+						<a href="https://github.com/mohammedbabelly20" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+							<svg viewBox="0 0 16 16" width="18" height="18">
+								<path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+							</svg>
+							GitHub
+						</a>
+						<a href="https://www.youtube.com/@MohammedBabelly" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+							<svg viewBox="0 0 16 16" width="18" height="18">
+								<path fill="currentColor" d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 0 7.708 2zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+							</svg>
+							YouTube
+						</a>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -104,13 +182,72 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 </html>
 
 <style>
-	/* Quick styles - feel free to move to global CSS */
-	.hero { text-align: center; padding: 5rem 1rem 3rem; }
-	.hero h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
-	.title { font-size: 1.6rem; font-weight: bold; color: #555; margin-bottom: 0.75rem; }
-	.tagline { font-size: 1.25rem; color: #666; }
-	section { max-width: 900px; margin: 0 auto; padding: 3rem 1rem; }
-	h2 { font-size: 2.25rem; margin-bottom: 1.5rem; }
-	h3 { font-size: 1.75rem; margin-bottom: 1rem; }
-	ul { list-style: none; padding: 0; }
+	/* Page-specific styles */
+	main {
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	/* Section inner container */
+	.section-inner {
+		max-width: var(--container-content);
+		margin: 0 auto;
+		padding: 0 var(--space-6);
+	}
+
+	/* About section */
+	.about-section {
+		max-width: var(--container-content);
+		margin: 0 auto;
+	}
+
+	/* Section intro text */
+	.section-intro {
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-6);
+	}
+
+	/* Talks section */
+	.talks-section {
+		max-width: var(--container-content);
+		margin: 0 auto;
+	}
+
+	/* Content list in cards */
+	.content-list {
+		list-style: disc;
+		padding-left: var(--space-6);
+		margin: var(--space-4) 0;
+	}
+
+	.content-list li {
+		margin-bottom: var(--space-3);
+		color: var(--color-text-secondary);
+	}
+
+	/* Connect section text */
+	.connect-text {
+		color: var(--color-text-secondary);
+		max-width: 500px;
+		margin: 0 auto var(--space-8);
+	}
+
+	/* Responsive adjustments */
+	@media (max-width: 720px) {
+		.section-inner {
+			padding: 0 var(--space-4);
+		}
+
+		.social-links {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.social-link-pill {
+			width: 100%;
+			max-width: 200px;
+			justify-content: center;
+		}
+	}
 </style>
