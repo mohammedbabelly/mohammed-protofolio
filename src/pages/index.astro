@@ -15,60 +15,102 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
 			<section class="hero">
 				<h1>Mohammed Babelly</h1>
-				<p class="title">Software Engineer</p>
-				<p class="tagline">Specializing in CI/CD, Build Automation, and Mobile DevOps</p>
-				<p class="location">Dubai, United Arab Emirates</p>
+				<p class="title">Software Engineer — Backend, Cloud, Automation & DevOps</p>
+				<p class="tagline">Building scalable systems at Codemagic • Python • GCP • Automation enthusiast</p>
 			</section>
 
 			<section class="about">
 				<h2>About Me</h2>
 				<p>
-					I am a Software Engineer with over 3 years of experience specializing in CI/CD and build automation. My expertise lies in architecting and configuring end-to-end pipelines for mobile platforms, including Android, iOS, and Kotlin Multiplatform Mobile (KMM). I have extensive experience integrating tools like Fastlane and Appetize into release workflows to streamline development. Beyond mobile, I have extended CI systems to game development, automating builds and deployments for Unity projects to Steam. I combine hands-on pipeline engineering with a developer-first approach to ensure smooth and reliable software delivery.
+					I'm a Software Engineer currently working at <strong>Codemagic CI/CD</strong>, where I focus on backend development with Python, building and maintaining scalable infrastructure on Google Cloud Platform (GCP), and heavy automation to power fast, reliable mobile & web development workflows for thousands of developers.
+				</p>
+				<p>
+					My journey started with mobile development using <strong>Flutter</strong> and <strong>Dart</strong>, building cross-platform apps and deep-diving into deployment automation. Over time, I shifted toward backend engineering (Python, .NET), cloud (GCP + AWS), Docker, server management, and creating developer-friendly CI/CD solutions.
+				</p>
+				<p>
+					I love automating everything — from pipelines and infrastructure to my own homelab setups with n8n, cron jobs, iOS Shortcuts, and self-hosted services. Sharing knowledge is a big passion: through talks, workshops, online courses, and YouTube content in Arabic and English.
 				</p>
 			</section>
 
 			<section class="skills">
 				<h2>Skills</h2>
-				<ul>
-					<li><strong>Core:</strong> CI/CD Pipelines, Build Automation, Mobile DevOps, Release Engineering</li>
-					<li><strong>Technologies:</strong> Android, iOS, Kotlin Multiplatform Mobile (KMM), Unity, Steamworks</li>
-					<li><strong>Tools:</strong> Codemagic, GitHub Actions, Fastlane, Appetize.io, Docker, Terraform</li>
-					<li><strong>Languages:</strong> Kotlin, Python, Dart (Flutter), PHP (Lumen), C++, C#</li>
+				<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+					<li><strong>Backend & Automation:</strong> Python, Automation, CI/CD, DevOps</li>
+					<li><strong>Mobile:</strong> Flutter, Dart, Mobile Deployment & Code Push</li>
+					<li><strong>Cloud & Infra:</strong> Google Cloud Platform (GCP), AWS, Docker, Server Management</li>
+					<li><strong>Other:</strong> Homelabbing, n8n, iOS Shortcuts, Ansible, Git</li>
+					<li><strong>Community:</strong> Contributor to Litestar (Python web framework) & Ansible</li>
 				</ul>
 			</section>
 
-			<section class="projects">
-				<h2>Projects</h2>
-				<div class="project">
-					<h3>Codemagic Sample Projects</h3>
-					<p>A collection of sample apps and workflow configurations demonstrating best practices for CI/CD with Codemagic.</p>
-					<p><em>Role: Automation Engineer / Contributor</em></p>
+			<section class="talks">
+				<h2>Talks & Workshops</h2>
+				<p>I've enjoyed speaking at developer communities and events in Dubai, Abu Dhabi, Aleppo, and online:</p>
+				<ul class="list-disc pl-6 space-y-3 mt-4">
+					<li><strong>Over-the-Air Updates for Flutter</strong> — Using Shorebird + Codemagic for seamless code pushes</li>
+					<li><strong>White Labeling Flutter Apps with CI/CD</strong> — Streamlining multi-brand deployments</li>
+					<li><strong>Prompt Engineering for Generative AI</strong> — Delivered multiple times (AWS Community Dubai, Syrian Developers Gathering, Aleppo University)</li>
+					<li><strong>Git Best Practices</strong> — Effective version control for teams</li>
+					<li><strong>How to Contribute to Open-Source Projects</strong> — Practical guide to getting started</li>
+					<li><strong>Flutter & Modern Mobile Workflows</strong> — Deployment, automation, and best practices</li>
+				</ul>
+			</section>
+
+			<section class="content mt-10">
+				<h2>Online Content & Teaching</h2>
+				<p>
+					I create educational content to help developers level up, mostly in Arabic with some English:
+				</p>
+
+				<div class="mt-6">
+					<h3 class="text-xl font-semibold">YouTube Channel (@MohammedBabelly)</h3>
+					<p class="mt-2">
+						My channel features tutorials, deep dives, and discussions on Flutter, CI/CD, clean code, and more (2K+ subscribers).
+					</p>
+					<ul class="list-disc pl-6 mt-3 space-y-2">
+						<li><strong>Various Flutter Discussions Series</strong> — Collaborative talks covering Flutter topics, tools, and real-world usage: <a href="https://youtube.com/playlist?list=PLMylOrRilu7tWKrTHhda6pvb8jgh9BAV0" target="_blank" class="text-blue-600 hover:underline">Watch the playlist</a></li>
+						<li>Other popular series & videos: Flutter State Management (Provider), Google Maps in Flutter, Flutter Web in 2024, Codemagic CI/CD in 45 minutes, SOLID Principles, and more.</li>
+					</ul>
+					<p class="mt-4">
+						<a href="https://www.youtube.com/@MohammedBabelly" target="_blank" class="text-blue-600 hover:underline font-medium">Visit my YouTube channel →</a>
+					</p>
 				</div>
-				<div class="project">
-					<h3>cm-gha (Codemagic GitHub Actions)</h3>
-					<p>Custom GitHub Actions developed to integrate Codemagic workflows seamlessly with GitHub repositories.</p>
-				</div>
-				<div class="project">
-					<h3>Lumen & PHP Tutorials</h3>
-					<p>Educational content creator covering the Lumen micro-framework, database migrations, and HTTP request handling.</p>
+
+				<div class="mt-8">
+					<h3 class="text-xl font-semibold">Almentor Course</h3>
+					<p class="mt-2">
+						<strong>Introduction to Cloud Computing</strong> — A beginner-friendly course (53 minutes, 11 lessons) covering cloud fundamentals, available on the Almentor platform with free lessons.
+					</p>
+					<p class="mt-3">
+						<a href="https://app.almentor.net/courses/Introduction-to-Cloud-Computing" target="_blank" class="text-blue-600 hover:underline font-medium">Enroll / View course →</a>
+					</p>
 				</div>
 			</section>
 
-			<section class="experience">
-				<h2>Experience</h2>
-				<div class="job">
-					<h3>Software Engineer at Codemagic</h3>
-					<p class="job-details">Dubai, UAE / Remote | 2022 – Present</p>
-					<ul>
-						<li>Architected and configured end-to-end CI/CD pipelines for Android, iOS, and Kotlin Multiplatform Mobile (KMM) projects.</li>
-						<li>Implemented practical integrations for Fastlane and Appetize.io to automate release workflows.</li>
-						<li>Extended CI capabilities to game development by automating Unity project builds and deployments to Steam.</li>
-						<li>Maintained and contributed to Codemagic sample projects, creating reference implementations for users.</li>
-						<li>Developed and maintained GitHub Actions (cm-gha) to enhance workflow automation.</li>
-					</ul>
+			<section class="connect mt-12 text-center">
+				<h2>Let's Connect</h2>
+				<p class="mt-4">
+					Working on backend, cloud, automation, Flutter, CI/CD, or just want to talk homelabbing? I'd love to hear from you!
+				</p>
+				<div class="flex flex-wrap justify-center gap-6 mt-6">
+					<a href="https://www.linkedin.com/in/mohammedbabelly" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+					<a href="https://github.com/mohammedbabelly20" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+					<a href="https://www.youtube.com/@MohammedBabelly" target="_blank" class="text-blue-600 hover:underline">YouTube</a>
 				</div>
 			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	/* Quick styles - feel free to move to global CSS */
+	.hero { text-align: center; padding: 5rem 1rem 3rem; }
+	.hero h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+	.title { font-size: 1.6rem; font-weight: bold; color: #555; margin-bottom: 0.75rem; }
+	.tagline { font-size: 1.25rem; color: #666; }
+	section { max-width: 900px; margin: 0 auto; padding: 3rem 1rem; }
+	h2 { font-size: 2.25rem; margin-bottom: 1.5rem; }
+	h3 { font-size: 1.75rem; margin-bottom: 1rem; }
+	ul { list-style: none; padding: 0; }
+</style>
